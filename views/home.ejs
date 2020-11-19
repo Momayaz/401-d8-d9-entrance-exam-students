@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-   
-    <%result.forEach(element=>{ %>
-        <h2><%=element.house%></h2>
-        <p><%=element.dateOfBirth%></p>
-        <form action="/detail" method="POST">
-            <input type="hidden" name="house" value="<%=element.house%>">
-            <button type="submit">View details</button>
-        </form>
-    <%})%>
+    <form action="/house_name/characters" method="POST">
+        <button type="submit">Gryffindor</button>
+        <input type="hidden" name="house" value="gryffindor">
+    </form>
+    <form action="/house_name/characters" method="POST">
+        <button type="submit">hufflepuff</button>
+        <input type="hidden" name="house" value="hufflepuff">
+    </form>
+    <form action="/house_name/characters" method="POST">
+        <button type="submit">ravenclaw</button>
+        <input type="hidden" name="house" value="ravenclaw">
+    </form>
+    <form action="/house_name/characters" method="POST">
+        <button type="submit">slytherin </button>
+        <input type="hidden" name="house" value="slytherin ">
+    </form>
+    
 </body>
 </html>
